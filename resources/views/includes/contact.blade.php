@@ -1,4 +1,3 @@
-
                 <!-- Contact Section -->
                 <article class="hs-content contact-section" id="section6">
                     <span class="sec-icon fa fa-phone-square"></span>
@@ -14,12 +13,16 @@
                             <hr>
                         </div>
                         <!-- Contact Form -->
-                        <form action="{{route('sendmail')}}" method="post">
+                        <!-- <form action="{{route('sendmail')}}" method="post"> -->
+                        <form action="{{route('recaptcha')}}" id="form" method="post">
                         <fieldset id="contact_form">
                             <div id="result"></div>
-                            <input type="text" name="name" id="name" placeholder="NAME" />
+                            <input type="text" name="title" id="name" placeholder="NAME" />
                             <input type="email" name="email" id="email" placeholder="EMAIL" />
                             <textarea name="message" id="message" placeholder="MESSAGE"></textarea>
+                            {{csrf_field()}}
+                            <div class="g-recaptcha" data-sitekey="6LcmehUUAAAAAD7PGAFWiJ9YXPAFj0VurO2m_SRW"></div>
+
                             <button type="submit" class="submit_btn" id="submit_btn">SEND MESSAGE</button>
                         </fieldset>
                     </form>

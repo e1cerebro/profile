@@ -4,7 +4,7 @@
                     <div class="hs-inner">
                         <span class="before-title">.04</span>
                         <h2>SKILLS</h2>
-                        <span class="content-title">WEB DEVELOPMENT SKILLS <i class="fa fa-code"></i></span>
+                        <span class="content-title">WEB DEVELOPMENT SKILLS <i class="fa fa-tv"></i></span>
                         <div class="skolls">
                             <span class="skill-description"></span>
                             <div class="bar-main-container">

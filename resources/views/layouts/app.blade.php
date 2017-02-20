@@ -24,6 +24,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,300,500,600' rel='stylesheet' type='text/css'>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <noscript>
         <style>
@@ -43,10 +44,10 @@
     </div>-->
     <!-- container -->
     <div id="hs-container" class="hs-container">
-          
+
 
         @yield('sidebar')
-        
+
         @yield('aside')
 
         <!-- Go To Top Button -->
@@ -55,9 +56,9 @@
 
         <!-- hs-content-scroller -->
         <div class="hs-content-scroller">
-            
+
             @yield('headercontent')
-           
+
             <!-- hs-content-wrapper -->
             <div class="hs-content-wrapper">
                 @yield('about')
@@ -67,12 +68,15 @@
                 @yield('services')
 
                 @yield('skills')
-               
+
 
                 @yield('works')
-                
+
                 @yield('contact')
-                </div>
+
+                @yield('empty')
+
+            </div>
                 <!-- End hs-content-wrapper -->
             </div>
             <!-- End hs-content-scroller -->
@@ -90,8 +94,9 @@
         <script type="text/javascript" src="js/watch.js"></script>
         <script type="text/javascript" src="js/layout.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-
+         @yield('jquery')
         <!-- END PLUGIN SCRIPTS -->
+
 </body>
 
 
